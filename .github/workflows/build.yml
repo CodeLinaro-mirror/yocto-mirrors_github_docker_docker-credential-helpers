@@ -84,7 +84,7 @@ jobs:
       -
         name: GPG conf
         if: ${{ !startsWith(matrix.os, 'windows-') }}
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         id: gpg
         with:
           script: |
